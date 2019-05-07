@@ -359,7 +359,7 @@ class SolverWrapper(object):
             m.bias.data.zero_()
 
     if cfg.TRAIN.INIT_WAY == 'resnet':
-      _vgg_init(model, dev)
+      _resent_init(model, dev)
     elif cfg.TRAIN.INIT_WAY == 'vgg':
       _vgg_init(model, dev)
     else:
